@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     ss.private_header_files = 'Meiqia-SDK-files/MQChatViewController/Vendors/VoiceConvert/amrwapper/wav.h'
     ss.source_files = 'Meiqia-SDK-files/MeiqiaSDKViewInterface/*.{h,m}', 'Meiqia-SDK-files/MQChatViewController/**/*.{h,m,mm,cpp}', 'Meiqia-SDK-files/MQMessageForm/**/*.{h,m}'
     ss.vendored_libraries = 'Meiqia-SDK-files/MQChatViewController/Vendors/MLAudioRecorder/amr_en_de/lib/mq-libopencore-amrnb.a', 'Meiqia-SDK-files/MQChatViewController/Vendors/MLAudioRecorder/amr_en_de/lib/mq-libopencore-amrwb.a'
-    #ss.preserve_path = '**/libopencore-amrnb.a', '**/libopencore-amrwb.a'
+    #ss.preserve_path = '**/mq-libopencore-amrnb.a', '**/mq-libopencore-amrwb.a'
     ss.xcconfig = { "LIBRARY_SEARCH_PATHS" => "\"$(PODS_ROOT)/Meiqia/Meiqia-SDK-files\"" }
     ss.resources = 'Meiqia-SDK-files/MQChatViewController/Assets/MQChatViewAsset.bundle'
   end
